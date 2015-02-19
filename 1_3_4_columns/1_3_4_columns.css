@@ -1,0 +1,150 @@
+/**
+ * @file
+ * CSS for the three-three-four layout.
+ */
+
+/* Clearfix for all region wrappers. */
+layout--1-3-4-columns .l-header:after,
+layout--1-3-4-columns .l-top:after,
+layout--1-3-4-columns .l-featured:after,
+layout--1-3-4-columns .l-messages:after,
+layout--1-3-4-columns .l-container:after,
+layout--1-3-4-columns .l-triptych:after,
+layout--1-3-4-columns .l-footer-columns:after,
+layout--1-3-4-columns .l-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+layout--1-3-4-columns .l-header,
+layout--1-3-4-columns .l-top,
+layout--1-3-4-columns .l-featured,
+layout--1-3-4-columns .l-messages,
+layout--1-3-4-columns .l-container,
+layout--1-3-4-columns .l-triptych,
+layout--1-3-4-columns .l-footer-wrapper {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+layout--1-3-4-columns .l-content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+layout--1-3-4-columns .l-footer {
+  padding: 35px 0 30px;
+}
+layout--1-3-4-columns .l-triptych-first,
+layout--1-3-4-columns .l-triptych-middle,
+layout--1-3-4-columns .l-triptych-last {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px 0;
+}
+layout--1-3-4-columns .l-footer-first-column,
+layout--1-3-4-columns .l-footer-second-column,
+layout--1-3-4-columns .l-footer-third-column,
+layout--1-3-4-columns .l-footer-fourth-column {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+@media all and (min-width: 560px) and (max-width: 850px) {
+  layout--1-3-4-columns .l-triptych-first,
+  layout--1-3-4-columns .l-triptych-middle,
+  layout--1-3-4-columns .l-triptych-last,
+  layout--1-3-4-columns .l-footer-first-column,
+  layout--1-3-4-columns .l-footer-second-column,
+  layout--1-3-4-columns .l-footer-third-column,
+  layout--1-3-4-columns .l-footer-fourth-column {
+    display: inline;
+    float: left; /* LTR */
+    position: relative;
+  }
+  [dir="rtl"] layout--1-3-4-columns .l-triptych-first,
+  [dir="rtl"] layout--1-3-4-columns .l-triptych-middle,
+  [dir="rtl"] layout--1-3-4-columns .l-triptych-last,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-first-column,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-second-column,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-third-column,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-fourth-column {
+    float: right;
+  }
+  layout--1-3-4-columns .l-triptych-first,
+  layout--1-3-4-columns .l-triptych-middle,
+  layout--1-3-4-columns .l-triptych-last {
+    padding: 20px 15px 30px;
+    width: 33%;
+  }
+  layout--1-3-4-columns .l-triptych-middle {
+    padding: 20px 5px 30px;
+  }
+  layout--1-3-4-columns .l-footer-first-column,
+  layout--1-3-4-columns .l-footer-second-column {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 50%;
+  }
+  layout--1-3-4-columns .l-footer-third-column,
+  layout--1-3-4-columns .l-footer-fourth-column {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 50%;
+  }
+  layout--1-3-4-columns .l-footer-third-column {
+    clear: both;
+  }
+}
+
+@media all and (min-width: 851px) {
+  layout--1-3-4-columns .l-content,
+  layout--1-3-4-columns .l-triptych-first,
+  layout--1-3-4-columns .l-triptych-middle,
+  layout--1-3-4-columns .l-triptych-last,
+  layout--1-3-4-columns .l-footer-first-column,
+  layout--1-3-4-columns .l-footer-second-column,
+  layout--1-3-4-columns .l-footer-third-column,
+  layout--1-3-4-columns .l-footer-fourth-column {
+    display: inline;
+    float: left; /* LTR */
+    position: relative;
+  }
+  [dir="rtl"] layout--1-3-4-columns .l-content,
+  [dir="rtl"] layout--1-3-4-columns .l-triptych-first,
+  [dir="rtl"] layout--1-3-4-columns .l-triptych-middle,
+  [dir="rtl"] layout--1-3-4-columns .l-triptych-last,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-first-column,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-second-column,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-third-column,
+  [dir="rtl"] layout--1-3-4-columns .l-footer-fourth-column {
+    float: right;
+  }
+  layout--1-3-4-columns .l-content {
+    width: 100%;
+  }
+  layout--1-3-4-columns .l-triptych-first,
+  layout--1-3-4-columns .l-triptych-middle,
+  layout--1-3-4-columns .l-triptych-last {
+    width: 33%;
+  }
+  layout--1-3-4-columns .l-footer-first-column,
+  layout--1-3-4-columns .l-footer-second-column,
+  layout--1-3-4-columns .l-footer-third-column,
+  layout--1-3-4-columns .l-footer-fourth-column {
+    padding: 0 10px;
+    width: 25%;
+  }
+}
