@@ -3,7 +3,7 @@ version = BACKDROP_VERSION
 backdrop = 1.x
 
 ; Include file for special preprocessing of this layout's variables.
-file = one_three_four_column.php
+;file = one_three_four_column.php
 
 ; Specify regions for this layout.
 regions[header] = Header
